@@ -16,7 +16,7 @@
         android:title="@string/app_name"
         android:titleTextColor="@android:color/white"
         app:titleCentered="true"
-        android:elevation="4dp" />
+        android:elevation="4dp"/>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -31,6 +31,16 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Zarejestruj się"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"/>
+
     <com.google.android.material.bottomappbar.BottomAppBar
         android:id="@+id/bottom_app_bar"
         android:layout_width="match_parent"
@@ -38,6 +48,17 @@
         android:layout_gravity="bottom"
         app:backgroundTint="@color/graphite"
         app:fabCradleMargin="10dp"
-        app:fabCradleVerticalOffset="1dp" />
+        app:fabCradleVerticalOffset="1dp">
+
+        <ImageView
+            android:id="@+id/favoriteIcon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_favorite_outline"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:contentDescription="@string/filter_favorites"/>
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

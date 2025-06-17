@@ -10,5 +10,4 @@
     android:paddingBottom="12dp"
     android:elevation="4dp"
     android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-    app:contentInsetStart="32dp"
-    app:navigationIcon="@drawable/back_ic"/>
+    app:contentInsetStart="32dp"/>

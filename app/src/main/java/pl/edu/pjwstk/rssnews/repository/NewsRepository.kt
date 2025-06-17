@@ -48,7 +48,6 @@ class NewsRepository {
                         "link" -> if (link.isEmpty()) link = text
                         "pubDate" -> if (pubDate.isEmpty()) pubDate = text
                         "item" -> {
-                            // Jeśli nie ma obrazka w enclosure, spróbuj wyciągnąć z <description>
                             if (imageUrl == null) {
                                 val imgRegex = Regex("src=['\"]([^'\"]+)['\"]")
                                 val match = imgRegex.find(description)
